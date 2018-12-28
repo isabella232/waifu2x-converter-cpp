@@ -7,7 +7,7 @@ include(CheckIncludeFileCXX)
 if(NOT ${CMAKE_SYSTEM_NAME} STREQUAL "Windows")
   # Windows does not have PkgConfig
   find_package(PkgConfig)
-  pkg_check_modules(OPENCV_PKG opencv)
+  pkg_check_modules(OPENCV_PKG opencv4)
 endif()
 
 string(TIMESTAMP TS)
